@@ -1,0 +1,25 @@
+@import "./node_modules/bootstrap/scss/bootstrap";
+
+$navcolor: #000000 ;
+$navwrite: #ffffff;
+
+.header{
+  background: $navcolor;
+}
+
+.footer{
+  background: $navcolor;
+  color:white;
+  
+  .address{
+    .address {list-style-type: none;}
+     a{
+      color: white;
+      transition: color .2s;
+      &:hover{
+        text-decoration:none;
+        color:$navwrite;
+        }
+    }  
+  }
+}

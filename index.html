@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <title>HotHotHot</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
+        crossorigin="anonymous"></script>
+    <link href="./style.css" rel="stylesheet">
+    <script type="text/javascript" src="data.json"></script>
+    <script type="text/javascript" src="javascrip.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>HotHotHot</h1>
+        <input type="checkbox" id="toggle" />
+        <nav>
+            <label for="toggle" class="toggle" data-open="Menu" data-close="Close" onclick></label>
+            <ul class="menu">
+                <li><a href="">Temperature</a></li>
+                <li><a href="">Alarme</a></li>
+                <li><a href="">Mon compte</a></li>
+                <li><a href="">Paramètre</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <article class="row">
+            <h2>Tempèrature</h2>
+            <section class="col-lg-6 col-xs-12">
+                <h3>Interieur:</h3>
+                    <p id="tempInt">20°C</p>
+                    <ul>
+                        <li class="col-lg-3 col-xs-6" >Minimum
+                        <p id="tempIntMin">20°C</p></li>
+                    </ul>
+                    <ul>
+                        <li class="col-lg-3 col-xs-6">maximum</li>
+                        <p id="tempIntMax">20°C</p></li>
+                        </li>
+                    </ul>
+            </section>
+
+            <section class="col-lg-6 col-xs-12">
+                <h3>exterieure:</h3>
+                <p id="tempExt">20°C</p>
+                <ul class="col-lg-3 col-xs-6">
+                    <li >Minimum
+                    <p id="tempExtMin">20°C</p></li>
+                </ul>
+                <ul class="col-lg-3 col-xs-6">
+                    <li>maximum
+                    <p id="tempExtMax">20°C</p></li>
+                    </li>
+                </ul>
+            </section>
+        </article>
+        <article>
+            <h2>Historique température</h2>
+            <ul id="historique">
+
+            </ul>
+            <input type="button" id="changerTemperature" value="changerTemperature">  
+        </article>
+    </main>
+    <footer>
+        <article class="container">
+            <section class="row">
+                <section class="col-lg-5 col-xs-12">
+                    <h2>about us</h2>
+                    <p class="pr-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac ante
+                        mollis quam tristique convallis </p>
+                </section>
+                <section class="col-lg-3 col-xs-12 links">
+                    <h4 class="mt-lg-0 mt-sm-3">address</h4>
+                    <address class="m-0 p-0">
+                        <a href="tel:+33662242922">+33662242922</a>
+                        <a href="mailto:nicolasgayet.pro@gmail.com">nicolasgayet.pro@gmail.com</a>
+                    </address>
+                </section>
+            </section>
+        </article>
+    </footer>
+</body>
+
+</html>
